@@ -1,0 +1,54 @@
+{
+  "_from": "https://www.atom.io/api/packages/color-picker/versions/2.3.0/tarball",
+  "_id": "color-picker@2.3.0",
+  "_inBundle": false,
+  "_integrity": "sha512-QmtOCpvvCQb6yNVVocuP00OzJXCe1ODC5C0oFokaCMIL/fD2POmoGwDs+0Vg6SsRltKWLxTa6BkaU3uRY3qm+A==",
+  "_location": "/color-picker",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/color-picker/versions/2.3.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/color-picker/versions/2.3.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/color-picker/versions/2.3.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/color-picker/versions/2.3.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/color-picker/versions/2.3.0/tarball",
+  "_shasum": "11934e5069acd34b27a483b9de20cb359e6ba7b4",
+  "_spec": "https://www.atom.io/api/packages/color-picker/versions/2.3.0/tarball",
+  "_where": "/tmp/apm-install-dir-118917-7809-2f176d.zyosh",
+  "bugs": {
+    "url": "https://github.com/thomaslindstrom/color-picker/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Right click or press CMD-SHIFT-C/CTRL-ALT-C to open it.",
+  "engines": {
+    "atom": ">=1.2.4"
+  },
+  "homepage": "https://github.com/thomaslindstrom/color-picker",
+  "keywords": [
+    "colors",
+    "design",
+    "ui"
+  ],
+  "license": "MIT",
+  "main": "./lib/ColorPicker",
+  "name": "color-picker",
+  "private": true,
+  "providedServices": {
+    "color-picker": {
+      "versions": {
+        "1.0.0": "provideColorPicker"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomaslindstrom/color-picker.git"
+  },
+  "version": "2.3.0"
+}

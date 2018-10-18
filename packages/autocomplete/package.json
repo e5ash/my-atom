@@ -1,0 +1,50 @@
+{
+  "_from": "https://www.atom.io/api/packages/autocomplete/versions/0.47.0/tarball",
+  "_id": "autocomplete@0.47.0",
+  "_inBundle": false,
+  "_integrity": "sha512-Lpjyh6bDiiY6MSABGnYDJRyhH9O49134tG7PSJXJuOelP25bYVeDcqq1/rI/ULWBUFOZ6UXJRQMEK+kTVpq5Cw==",
+  "_location": "/autocomplete",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/autocomplete/versions/0.47.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/autocomplete/versions/0.47.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/autocomplete/versions/0.47.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/autocomplete/versions/0.47.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/autocomplete/versions/0.47.0/tarball",
+  "_shasum": "ace03a98d5ceec82dfa40f974c821cda302b7519",
+  "_spec": "https://www.atom.io/api/packages/autocomplete/versions/0.47.0/tarball",
+  "_where": "/tmp/apm-install-dir-118917-8243-1et4tuq.layb",
+  "activationCommands": {
+    "atom-text-editor": [
+      "autocomplete:toggle"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/atom/autocomplete/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "atom-space-pen-views": "^2.0.0",
+    "underscore-plus": "^1.0.0"
+  },
+  "deprecated": false,
+  "description": "Display possible completions in the editor with `ctrl-space`.",
+  "engines": {
+    "atom": "*"
+  },
+  "homepage": "https://github.com/atom/autocomplete#readme",
+  "license": "MIT",
+  "main": "./lib/autocomplete",
+  "name": "autocomplete",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atom/autocomplete.git"
+  },
+  "version": "0.47.0"
+}

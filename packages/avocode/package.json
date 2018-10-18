@@ -1,0 +1,68 @@
+{
+  "_from": "https://www.atom.io/api/packages/avocode/versions/0.0.9/tarball",
+  "_id": "avocode@0.0.9",
+  "_inBundle": false,
+  "_integrity": "sha512-il1R2Yf/+4CPbxBrsIeSUporMdXTWw5fUVUy5QZi2CkaDM0Cfq5miij2Q86nd68gkiOUxC7LYpxAf0s6Yheo8A==",
+  "_location": "/avocode",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/avocode/versions/0.0.9/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/avocode/versions/0.0.9/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/avocode/versions/0.0.9/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/avocode/versions/0.0.9/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/avocode/versions/0.0.9/tarball",
+  "_shasum": "d5d89eb7c7130fd2bc714e7ac5df9ec55e9b5c71",
+  "_spec": "https://www.atom.io/api/packages/avocode/versions/0.0.9/tarball",
+  "_where": "/tmp/apm-install-dir-118918-2579-17fe5fo.vq3w",
+  "activationCommands": {
+    "atom-workspace": [
+      "avocode:split-up",
+      "avocode:split-down",
+      "avocode:split-right",
+      "avocode:split-left",
+      "avocode:new-tab"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/avocode/avocode-atom-integration/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Integrate Avocode web app with Atom to inspect Photoshop & Sketch designs inside your text editor and to get code suggestions from layer styles.",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/avocode/avocode-atom-integration#readme",
+  "keywords": [
+    "design",
+    "inspect",
+    "preview",
+    "export",
+    "psd",
+    "sketch",
+    "adobe",
+    "xd",
+    "comment"
+  ],
+  "main": "./lib/avocode",
+  "name": "avocode",
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "getProvider"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avocode/avocode-atom-integration.git"
+  },
+  "version": "0.0.9"
+}

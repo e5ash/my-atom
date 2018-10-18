@@ -1,0 +1,147 @@
+{
+  "_from": "https://www.atom.io/api/packages/todo-show/versions/2.3.2/tarball",
+  "_id": "todo-show@2.3.2",
+  "_inBundle": false,
+  "_integrity": "sha512-GZrXGg4D7qgx/eEl/JIxvbg/2p8fJityr/eMK7jhwxuUk6bm/1AU8mltgFvOKoZXfJUP8Jr0m+BYfo8p5l6Rfw==",
+  "_location": "/todo-show",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/todo-show/versions/2.3.2/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/todo-show/versions/2.3.2/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/todo-show/versions/2.3.2/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/todo-show/versions/2.3.2/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/todo-show/versions/2.3.2/tarball",
+  "_shasum": "b24537d53e46bc69cc6608d4c4ec03ac8ad5b0f1",
+  "_spec": "https://www.atom.io/api/packages/todo-show/versions/2.3.2/tarball",
+  "_where": "/tmp/apm-install-dir-118917-7023-191mvnl.vl2e",
+  "bugs": {
+    "url": "https://github.com/mrodalgaard/atom-todo-show/issues"
+  },
+  "bundleDependencies": false,
+  "configSchema": {
+    "autoRefresh": {
+      "type": "boolean",
+      "default": true
+    },
+    "findTheseTodos": {
+      "description": "An array of todo types used by the search regex.",
+      "type": "array",
+      "default": [
+        "TODO",
+        "FIXME",
+        "CHANGED",
+        "XXX",
+        "IDEA",
+        "HACK",
+        "NOTE",
+        "REVIEW",
+        "NB",
+        "BUG",
+        "QUESTION",
+        "COMBAK",
+        "TEMP"
+      ],
+      "items": {
+        "type": "string"
+      }
+    },
+    "findUsingRegex": {
+      "description": "Regex string used to find all your todos. `${TODOS}` is replaced with `FindTheseTodos` from above.",
+      "type": "string",
+      "default": "/\\b(${TODOS})[:;.,]?\\d*($|\\s.*$|[\\{\\[\\(].+$)/g"
+    },
+    "ignoreThesePaths": {
+      "description": "Similar to `.gitignore` (remember to use `/` on Mac/Linux and `\\` on Windows for subdirectories).",
+      "type": "array",
+      "default": [
+        "node_modules",
+        "vendor",
+        "bower_components",
+        "*.pdf"
+      ],
+      "items": {
+        "type": "string"
+      }
+    },
+    "showInTable": {
+      "description": "An array of properties to show for each todo in table.",
+      "type": "array",
+      "default": [
+        "Text",
+        "Type",
+        "Path"
+      ]
+    },
+    "sortBy": {
+      "type": "string",
+      "default": "Text",
+      "enum": [
+        "All",
+        "Text",
+        "Type",
+        "Range",
+        "Line",
+        "Regex",
+        "Path",
+        "File",
+        "Tags",
+        "Id",
+        "Project"
+      ]
+    },
+    "sortAscending": {
+      "type": "boolean",
+      "default": true
+    },
+    "exportAs": {
+      "type": "string",
+      "default": "List",
+      "enum": [
+        "List",
+        "Table"
+      ]
+    },
+    "statusBarIndicator": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-space-pen-views": "^2.0.3",
+    "event-kit": "^2.3.0",
+    "fs-plus": "2.x",
+    "sortablejs": "^1.4.2",
+    "temp": "^0.8.3",
+    "underscore-plus": "^1.6.6"
+  },
+  "deprecated": false,
+  "description": "Finds all the TODOs, FIXMEs, CHANGEDs, etc. in your project.",
+  "deserializers": {
+    "todo-show/todo-view": "deserializeTodoView"
+  },
+  "engines": {
+    "atom": ">1.17.0"
+  },
+  "homepage": "https://github.com/mrodalgaard/atom-todo-show#readme",
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "todo-show",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrodalgaard/atom-todo-show.git"
+  },
+  "version": "2.3.2"
+}

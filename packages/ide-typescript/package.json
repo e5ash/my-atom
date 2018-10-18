@@ -1,0 +1,145 @@
+{
+  "_from": "https://www.atom.io/api/packages/ide-typescript/versions/0.7.9/tarball",
+  "_id": "ide-typescript@0.7.9",
+  "_inBundle": false,
+  "_integrity": "sha512-Ft2XfPNuhz4+JgRuEpnP3ND81JoNAaeWxq4OUykF5dhpw+jETPatr3wcSFylXWRapusr+sE2GnyxytxhxscmVw==",
+  "_location": "/ide-typescript",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/ide-typescript/versions/0.7.9/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/ide-typescript/versions/0.7.9/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/ide-typescript/versions/0.7.9/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/ide-typescript/versions/0.7.9/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/ide-typescript/versions/0.7.9/tarball",
+  "_shasum": "4414fd63dd18155d9cbd250bad58618eef06caa3",
+  "_spec": "https://www.atom.io/api/packages/ide-typescript/versions/0.7.9/tarball",
+  "_where": "/tmp/apm-install-dir-118917-7737-uxt7pn.0ftw",
+  "bugs": {
+    "url": "https://github.com/atom/ide-typescript/issues"
+  },
+  "bundleDependencies": false,
+  "configSchema": {
+    "diagnosticsEnabled": {
+      "type": "boolean",
+      "default": true,
+      "description": "Use the TypeScript language server to provide diagnostics and warnings."
+    },
+    "javascriptSupport": {
+      "type": "boolean",
+      "title": "JavaScript support",
+      "default": true,
+      "description": "Use the TypeScript language server to also provide services for JavaScript."
+    },
+    "ignoreFlow": {
+      "type": "boolean",
+      "title": "Ignore Flow project folders",
+      "default": true,
+      "description": "Ignore project folders that contain a Flow `.flowconfig` file."
+    },
+    "autocompleteResultsFirst": {
+      "type": "boolean",
+      "title": "Show autocomplete results first",
+      "default": true,
+      "description": "Suggestions will be placed before the rest of autocomplete results (e.g. snippets etc). Requires restart to take effect."
+    },
+    "returnTypeInAutocomplete": {
+      "type": "string",
+      "default": "left",
+      "enum": [
+        {
+          "value": "left",
+          "description": "On their own to the left (like other languages)"
+        },
+        {
+          "value": "right",
+          "description": "Following parameters to the right (like source code)"
+        }
+      ],
+      "description": "Where return types are shown in AutoComplete."
+    }
+  },
+  "consumedServices": {
+    "console": {
+      "versions": {
+        "0.1.0": "consumeConsole"
+      }
+    },
+    "datatip": {
+      "versions": {
+        "0.1.0": "consumeDatatip"
+      }
+    },
+    "linter-indie": {
+      "versions": {
+        "2.0.0": "consumeLinterV2"
+      }
+    },
+    "signature-help": {
+      "versions": {
+        "0.1.0": "consumeSignatureHelp"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-languageclient": "0.9.7",
+    "javascript-typescript-langserver": "^2.7.0"
+  },
+  "deprecated": false,
+  "description": "TypeScript and JavaScript language support for Atom-IDE.",
+  "engines": {
+    "atom": ">=1.21.0"
+  },
+  "enhancedScopes": [
+    "source.ts",
+    "source.tsx",
+    "source.js",
+    "source.js.jsx"
+  ],
+  "homepage": "https://github.com/atom/ide-typescript#readme",
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "ide-typescript",
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "provideAutocomplete"
+      }
+    },
+    "code-actions": {
+      "versions": {
+        "0.1.0": "provideCodeActions"
+      }
+    },
+    "code-format.range": {
+      "versions": {
+        "0.1.0": "provideCodeFormat"
+      }
+    },
+    "definitions": {
+      "versions": {
+        "0.1.0": "provideDefinitions"
+      }
+    },
+    "find-references": {
+      "versions": {
+        "0.1.0": "provideFindReferences"
+      }
+    },
+    "outline-view": {
+      "versions": {
+        "0.1.0": "provideOutlines"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atom/ide-typescript.git"
+  },
+  "version": "0.7.9"
+}

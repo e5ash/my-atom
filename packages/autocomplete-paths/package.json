@@ -1,0 +1,62 @@
+{
+  "_from": "https://www.atom.io/api/packages/autocomplete-paths/versions/2.12.2/tarball",
+  "_id": "autocomplete-paths@2.12.2",
+  "_inBundle": false,
+  "_integrity": "sha512-Zp2+dbhg58owr7E7Ew55Zad0oafVlDHyQ0Z01xXXWiuuUoyyjn19Q8cO757F1i8vp3Yo0BVD7wfIBU/xWA0Z+w==",
+  "_location": "/autocomplete-paths",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/autocomplete-paths/versions/2.12.2/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/autocomplete-paths/versions/2.12.2/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/autocomplete-paths/versions/2.12.2/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/autocomplete-paths/versions/2.12.2/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/autocomplete-paths/versions/2.12.2/tarball",
+  "_shasum": "fd934aa91d3cffa9a467d3760152c08917fa392f",
+  "_spec": "https://www.atom.io/api/packages/autocomplete-paths/versions/2.12.2/tarball",
+  "_where": "/tmp/apm-install-dir-118917-8180-3crzpd.c6due",
+  "bugs": {
+    "url": "https://github.com/atom-community/autocomplete-paths/issues"
+  },
+  "bundleDependencies": false,
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    }
+  },
+  "dependencies": {
+    "fuzzaldrin-plus": "^0.4.1",
+    "git-ignore-parser": "^0.0.2",
+    "minimatch": "^3.0.4",
+    "slash": "^1.0.0",
+    "underscore-plus": ">=1.1.2"
+  },
+  "deprecated": false,
+  "description": "Adds path autocompletion to autocomplete+",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/atom-community/autocomplete-paths#readme",
+  "license": "MIT",
+  "main": "./lib/autocomplete-paths",
+  "name": "autocomplete-paths",
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "getProvider"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atom-community/autocomplete-paths.git"
+  },
+  "version": "2.12.2"
+}

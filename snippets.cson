@@ -1,0 +1,167 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# Each scope (e.g. '.source.coffee' above) can only be declared once.
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+#
+# HTML: .text.html.basic
+# CSS: .source.css
+# Sass: .source.sass
+# JavaScript: .source.js
+# JSON: .source.json
+# PHP: .text.html.php
+# Java: .source.java
+# Ruby: .text.html.erb
+# Python: .source.python
+# Обычный текст (включая markdown): .text.plain
+
+
+'.text.plain':
+  'FL.ru - ответ на проект':
+    'prefix': 'fl'
+    'body': '''
+      Здравствуйте!
+      Меня заинтересовал Ваш проект.
+
+      Сроки:  .
+      Стоимость:  рублей.
+
+      • Профессиональный подход к работе
+      • Высылаю промежуточный результат
+      • Отслеживание статуса проекта на GitHub
+      • Структурированный и самодокументируемый код
+      • Не беру в работу более 1-го заказа
+      • Не пропадаю во время выполнения задачи
+      • Не срываю заявленных сроков
+      Telegram: @olfrey
+      WhatsApp, Viber: +7 (988) 669-47-80
+      Skype: live:olfrey_2
+      Почта: i@olfrey.ru
+    '''
+
+  'Карта Сбербанка':
+    'prefix': 'card'
+    'body': '''
+      Карта (Сбербанк) – 5469 1300 1147 3806 (Юлия Александровна В.)
+    '''
+
+'.source.sass':
+  'BEM element':
+    'prefix': '1'
+    'body': '''&__$1
+      $2'''
+
+'.text.html':
+  'Fancybox link element':
+    'prefix': 'fba'
+    'body': 'data-fancybox data-src="#popup-$1" href="javascript:;"'
+
+'.source.js':
+  'Console log':
+    'prefix': 'log'
+    'body': 'console.log($1);'
+  'jQuery element':
+    'prefix': '1'
+    'body': '\$($1)$2;'
+  # fancybox
+  'Fancybox close popup':
+    'prefix': 'fbc'
+    'body': '$.fancybox.close();\n$1'
+
+  'Fancybox open popup':
+    'prefix': 'fbo'
+    'body': '$.fancybox.open({src  : "#${1:popup-thanks}",type : "inline"});\n$2'
+
+  'Связка label + input':
+    'prefix': 'li'
+    'body': '''function valueElementForm(nameElement, nameBlock) {
+    	var newNameElement = '.' + nameElement;
+    		element = \$(newNameElement);
+    	element.each(function(index, el) {
+    		var elementInput = \$(this).find(nameblock),
+    			elementLabel = \$(this).find(\$('label')),
+    			elementValue = index + 1;
+    		elementInput.attr('id', nameElement + '-' + elementValue);
+    		elementLabel.attr('for', nameElement + '-' + elementValue);
+    	});
+
+    }
+    valueElementForm('${1:checkbox}', '${2:input}');
+    $3'''
+
+  # Contact Form 7
+  'Contact form 7 after ...':
+    'prefix': 'cf7'
+    'body': '''
+      document.addEventListener( 'wpcf7mailsent', function( event ) {
+        if ( '' == event.detail.contactFormId ) {
+          \$.fancybox.close();
+          \$.fancybox.open({src  : '#popup-thanks',type : 'inline'});
+        }
+      }, false );
+    '''
+
+
+'.text.html.php':
+  # ACF
+  'ACF Flex content':
+    'prefix': 'acfloop'
+    'body': '''
+    <?php if( have_rows('') ){ $i = 1; while ( have_rows('') ) : the_row(); ?>
+    <?php if( get_row_layout() == 'блок' ): ?>
+      $1
+    <?php endif; ?>
+    <?php endwhile; ?>
+    <?php endif; ?>
+    $2
+    '''
+  'ACF field':
+    'prefix': 'acft'
+    'body': '<?php the_field("$1"); ?>'
+
+  'ACF sub field':
+    'prefix': 'acfts'
+    'body': '<?php the_sub_field("$1"); ?>'
+
+  'ACF image':
+    'prefix': 'acfi'
+    'body': '<?php \$image = get_field("$1"); if( !empty(\$image) ): ?><img src="<?php echo \$image["url"]; ?>" alt="<?php echo \$image["alt"]; ?>" /><?php endif; ?>'
+
+  'ACF Gallery':
+    'prefix': 'acfg'
+    'body': '''
+      <?php $images = get_field("$1"); $size = 'full'; ?>
+      <?php if( $images ): ?>
+        <?php foreach( $images as $image ): ?>
+        <?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
+        <?php endforeach; ?>
+      <?php endif; ?>
+    '''
+
+  # WordPress
+  'Wordpress WP_Query':
+    'prefix': 'wploop'
+    'body': '''
+      <?php \$loop = new WP_Query( array( 'post_type' => '$1', 'posts_per_page' => 0 ) ); ?>
+      <?php while ( \$loop->have_posts() ) : \$loop->the_post(); ?>
+      	$2
+      <?php endwhile; ?>
+      <?php wp_reset_query();?>
+      $3
+    '''

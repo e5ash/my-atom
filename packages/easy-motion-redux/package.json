@@ -1,0 +1,45 @@
+{
+  "_from": "https://www.atom.io/api/packages/easy-motion-redux/versions/1.2.0/tarball",
+  "_id": "easy-motion-redux@1.2.0",
+  "_inBundle": false,
+  "_integrity": "sha512-y2Q0dhYi4wr61AYAGuMqW8XvYkEN9U+0ye68gRXu95kfANx4jggm/0hMSnf+oykQdXssXAqv9vVHKdSjYGSoOg==",
+  "_location": "/easy-motion-redux",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/easy-motion-redux/versions/1.2.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/easy-motion-redux/versions/1.2.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/easy-motion-redux/versions/1.2.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/easy-motion-redux/versions/1.2.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/easy-motion-redux/versions/1.2.0/tarball",
+  "_shasum": "6ca1412589f137e2d97b49319cd3fed000f0e319",
+  "_spec": "https://www.atom.io/api/packages/easy-motion-redux/versions/1.2.0/tarball",
+  "_where": "/tmp/apm-install-dir-118918-23655-1p8844z.ad8o",
+  "bugs": {
+    "url": "https://github.com/leny/atom-easy-motion-redux/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "atom-space-pen-views": "^2.0.5",
+    "underscore-plus": "^1.6.6"
+  },
+  "deprecated": false,
+  "description": "MovementSpeed++. Jump to any word in your current view super fast. (redux)",
+  "engines": {
+    "atom": ">=1.2"
+  },
+  "homepage": "https://github.com/leny/atom-easy-motion-redux#readme",
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "easy-motion-redux",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leny/atom-easy-motion-redux.git"
+  },
+  "version": "1.2.0"
+}

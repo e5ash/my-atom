@@ -1,0 +1,61 @@
+{
+  "_from": "https://www.atom.io/api/packages/autoclose-html/versions/0.23.0/tarball",
+  "_id": "autoclose-html@0.23.0",
+  "_inBundle": false,
+  "_integrity": "sha512-D+XDFMqHlWqCpi5XlkJM15yWgYQaAvGtOvWuQHzFwA5wsJc0WSqA6hvjbBYaia9K4pHnZ8SzOOe4k39qNY/1/w==",
+  "_location": "/autoclose-html",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/autoclose-html/versions/0.23.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/autoclose-html/versions/0.23.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/autoclose-html/versions/0.23.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/autoclose-html/versions/0.23.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/autoclose-html/versions/0.23.0/tarball",
+  "_shasum": "ca848a95c85bb82332de8b74c68895c25fb10e7c",
+  "_spec": "https://www.atom.io/api/packages/autoclose-html/versions/0.23.0/tarball",
+  "_where": "/tmp/apm-install-dir-118917-9105-bk6whc.u7pa",
+  "author": {
+    "name": "Matt Berkowitz"
+  },
+  "bugs": {
+    "url": "https://github.com/mattberkowitz/autoclose-html/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Evan Hahn",
+      "email": "me@evanhahn.com",
+      "url": "http://evanhahn.com"
+    },
+    {
+      "name": "Mat Silva",
+      "email": "askmatsilva@.com",
+      "url": "https://github.com/matsilva"
+    }
+  ],
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Automates closing of HTML Tags",
+  "dist": {
+    "shasum": "25792d1cf3395393c861bfcb919fe684f505af85"
+  },
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/mattberkowitz/autoclose-html",
+  "license": "MIT",
+  "main": "./lib/autoclose-html",
+  "name": "autoclose-html",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattberkowitz/autoclose-html.git"
+  },
+  "version": "0.23.0"
+}

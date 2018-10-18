@@ -1,0 +1,18 @@
+"*":
+  core:
+    disabledPackages: [
+      "vim-mode-plus"
+    ]
+    telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "chester-atom-syntax"
+    ]
+  editor:
+    fontSize: 13
+    scrollPastEnd: true
+  "exception-reporting":
+    userId: "3d3d7309-dff5-4871-9268-592904f475f2"
+  minimap: {}
+  welcome:
+    showOnStartup: false

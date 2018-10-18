@@ -1,0 +1,49 @@
+{
+  "_from": "https://www.atom.io/api/packages/chester-atom-syntax/versions/0.3.2/tarball",
+  "_id": "chester-atom-syntax@0.3.2",
+  "_inBundle": false,
+  "_integrity": "sha512-6xIoDndRNd4l1bBe/3vZ/tc9/6mD0HWOYZh2UyfPiknoSteRqh8/zGwqu+mgDVKmBlHu7s3V15YzfICuCEO9eQ==",
+  "_location": "/chester-atom-syntax",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/chester-atom-syntax/versions/0.3.2/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/chester-atom-syntax/versions/0.3.2/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/chester-atom-syntax/versions/0.3.2/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/chester-atom-syntax/versions/0.3.2/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/chester-atom-syntax/versions/0.3.2/tarball",
+  "_shasum": "9bf0009e431063c271bf32ea4269b99e57f512a6",
+  "_spec": "https://www.atom.io/api/packages/chester-atom-syntax/versions/0.3.2/tarball",
+  "_where": "/tmp/apm-install-dir-118917-8963-1iq30ox.w3fy",
+  "bugs": {
+    "url": "https://github.com/csutter/chester-atom-syntax/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A pretty Atom syntax theme based on Lonely Planet colours",
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "homepage": "https://github.com/csutter/chester-atom-syntax#readme",
+  "keywords": [
+    "chester",
+    "syntax",
+    "theme",
+    "atom",
+    "clean",
+    "sexy"
+  ],
+  "license": "MIT",
+  "name": "chester-atom-syntax",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csutter/chester-atom-syntax.git"
+  },
+  "theme": "syntax",
+  "version": "0.3.2"
+}
